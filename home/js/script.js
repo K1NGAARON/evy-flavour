@@ -1,27 +1,5 @@
-// const counters = document.querySelectorAll('.counter');
-// const speed = 200;
-
-// counters.forEach( counter => {
-//    const animate = () => {
-//       const value = +counter.getAttribute('total');
-//       const data = +counter.innerText;
-     
-//       const time = value / speed;
-//      if(data < value) {
-//           counter.innerText = Math.ceil(data + time);
-//           setTimeout(animate, 1);
-//         }else{
-//           counter.innerText = value;
-//         }
-     
-//    }
-   
-//    animate();
-// });
-
-// Animate numbers
+// ANIMATE NUMBERS
 function animate(obj, initVal, lastVal, duration) {
-    
     let startTime = null;
     let currentTime = Date.now();
     
@@ -50,7 +28,6 @@ function animate(obj, initVal, lastVal, duration) {
 // start animating
     window.requestAnimationFrame(step);
 }
-    
 
 function load() {
     let text1 = document.getElementById('count1');
