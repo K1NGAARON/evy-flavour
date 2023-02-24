@@ -1,0 +1,152 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+
+    width: 100%;
+    margin: 0;
+}
+
+.header.active {
+    position: fixed;
+    background-color: var(--white);
+    top: 0;
+    transition: background-color 200ms linear;
+}
+
+.header .row,
+.footer .row {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.header nav {
+    display: flex;
+    gap: 60px;
+}
+
+.header .logo,
+.footer .logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.header nav .nav-item {
+    font-size: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header.active nav .nav-item {
+    color: var(--primary);
+}
+
+.header nav .nav-item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.header.active nav .nav-item::before {
+    background-color: var(--primary);
+}
+
+.header nav .nav-item:hover::before {
+    transform: scaleX(1);
+}
+
+.header.active .topnav-content-sm svg {
+    fill: var(--primary);
+}
+
+.header .topnav-content-sm {
+    display: none;
+}
+
+.header .small-menu-wrapper {
+    display: none;
+}
+
+.footer.section {
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--light-grey);
+}
+
+.footer.section,
+.footer.section .row {
+    min-height: 20vh;
+}
+
+.footer.section .row {
+    justify-content: space-between;
+}
+
+.footer.section .legal-info {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer .made-by {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    background-color: var(--white);
+}
+
+.footer .made-by p {
+    font-size: 12px;
+}
+
+.footer .made-by a {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 880px) {
+    .header.section {
+        flex-direction: column;
+    }
+
+    .header .row {
+        display: none;
+    }
+
+    .header .topnav-content-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        width: 100%;
+    }
+
+    .header .small-menu-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        background-color: var(--white);
+    }
+
+    .header .topnav-content-sm svg {
+        fill: var(--white);
+        width: 25px;
+    }
+
+    .header .topnav-content-sm svg:hover {
+        cursor: pointer;
+    }
+}

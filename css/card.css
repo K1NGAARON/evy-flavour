@@ -1,0 +1,45 @@
+.wrapper {
+    gap: 40px;
+    justify-content: center;
+}
+
+.wrapper .card {
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.wrapper .card img {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.wrapper .card h5 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.wrapper .card p {
+    margin-bottom: 30px;
+}
+
+.wrapper .card h5,
+.wrapper .card p {
+    padding: 0 30px;
+}
+
+.wrapper .card .btn {
+    margin: auto 30px 30px 30px;
+}
+
+@media (max-width: 560px) {
+    .wrapper .card {
+        flex: 1 0 100%;
+    }
+}
