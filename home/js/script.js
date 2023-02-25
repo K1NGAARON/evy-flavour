@@ -1,10 +1,12 @@
+let animationStyle = "slideUp";
+let animationTarget = ".row.animate";
+
 // ANIMATE NUMBERS
 function animate(obj, initVal, lastVal, duration) {
     let startTime = null;
     let currentTime = Date.now();
     
     const step = (currentTime ) => {
-    
         // if the start time is null, assign the current time to startTime
         if (!startTime) {
             startTime = currentTime ;
@@ -25,7 +27,6 @@ function animate(obj, initVal, lastVal, duration) {
         }
     };
     
-// start animating
     window.requestAnimationFrame(step);
 }
 
@@ -39,6 +40,7 @@ function load() {
     animate(text3, 0, 42, 4000);
 }
 
+// ANIMATE NUMBERS
 let firstTime = true;
 
 $(window).scroll(function() {

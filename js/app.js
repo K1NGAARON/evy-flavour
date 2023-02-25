@@ -16,3 +16,17 @@ $(document).scroll(function() {
 $("#menu-toggle").click(function() {
     $(".small-menu-wrapper").toggle("active");
 });
+
+// SLIDE UP ROWS IN VIEWPORT
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add(animationStyle);
+        }
+      });
+  });
+  
+const targets = document.querySelectorAll(animationTarget);
+for (const target of targets) {
+    observer.observe(target);
+}
