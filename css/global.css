@@ -186,6 +186,14 @@ img {
     background: var(--overlay-vertical);
 }
 
+.banner.section {
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
 
 .contact.section {
     margin: 0;
@@ -210,32 +218,40 @@ img {
     flex: 1;
     width: 100%;
     padding: 16px;
-    background-color: hsla(0, 0%, 100%, 0.1);
-    border: 1px solid var(--primary);
-    border-radius: 12px;
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: var(--border-radius);
     height: 60px;
     outline: none;
     font-size: 18px;
-    transition: border-bottom 200ms ease;
 }
 
 .section.contact .form-wrapper input:focus {
-    transition: border-bottom 200ms ease;
+    transition: border 200ms ease;
     border: 3px solid var(--primary);
 }
 
 .section.contact .form-wrapper .btn {
     color: var(--white);
     background-color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    transition: border-bottom 200ms ease;
     transition: var(--transition);
     margin-top: 20px;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
 }
 
 .section.contact .form-wrapper .btn:hover {
     transform: scale(1.02);
+}
+
+.section.contact .form-wrapper .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section.contact .form-wrapper .container #gdpr {
+    width: 25px;
+    height: 25px;
 }
 
 .banner.section,

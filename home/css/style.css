@@ -1,11 +1,5 @@
 .banner.section {
-    color: var(--white);
     background-image: url('/home/img/banner.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 0;
-    position: relative;
 }
 
 .animated.section {

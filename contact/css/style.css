@@ -1,0 +1,21 @@
+.banner.section {
+    background-image: url('/home/img/banner.jpg');
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.banner.section img {
+    border-radius: var(--border-radius);
+}
+
+.banner.section h1, 
+.banner.section p {
+    max-width: none;
+}
