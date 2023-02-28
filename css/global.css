@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bahnschrift');
+                
 
 :root {
-    --primary: #80855F;
+    --primary: #d36e70;
     --black: #141414;
     --white: #ffffff;
     --light-grey: #fafafa;
@@ -14,7 +16,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: 'Bahnschrift', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -219,7 +221,7 @@ img {
     width: 100%;
     padding: 16px;
     background-color: var(--white);
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     border-radius: var(--border-radius);
     height: 60px;
     outline: none;
