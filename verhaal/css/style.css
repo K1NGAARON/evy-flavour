@@ -1,0 +1,26 @@
+.banner.section,
+.contact.section {
+    background-image: none;
+    background-color: var(--primary);
+}
+
+.banner.section h1,
+.banner.section p {
+    max-width: none;
+}
+
+.gallery.section .wrapper .item {
+    flex: 1 0 20%;
+}
+
+.contact.section h2 {
+    color: var(--white);
+}
+
+.contact.section {
+    height: 40vh;
+}
+
+.contact.section .row {
+    padding: 60px 30px;
+}
