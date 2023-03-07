@@ -151,7 +151,7 @@ img {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 30px;
 }
 
 .section .row.flex-col {
