@@ -1,0 +1,16 @@
+.content.section .row {
+    max-width: 900px;
+}
+
+.content.section .container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    margin: 60px auto;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.content.section img {
+    border-radius: var(--border-radius);
+}

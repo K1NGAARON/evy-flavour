@@ -2,20 +2,20 @@ const content = [
     {
         title: "this is a title",
         body: "this is some body text",
-        img: "",
-        url: 'this is the url'
+        img: "/vakantiekok/img/placeholder.jpg",
+        url: '/travel/post/'
     },
     {
         title: "this is a title",
         body: "this is some body text",
-        img: "",
-        url: 'this is the url'
+        img: "/vakantiekok/img/placeholder.jpg",
+        url: '/travel/post/'
     },
     {
         title: "this is a title",
         body: "this is some body text",
-        img: "",
-        url: 'this is the url'
+        img: "/vakantiekok/img/placeholder.jpg",
+        url: '/travel/post/'
     }
 ];
 
