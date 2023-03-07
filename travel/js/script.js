@@ -24,7 +24,7 @@ function createCards(e) {
 
     for (let i = 0; i < content.length; i++) {
         let template = `
-            <div class="card">
+            <div class="card animate">
                 <img src="${content[i].img}" alt="${content[i].title}">
                 <h5>
                     ${content[i].title}
