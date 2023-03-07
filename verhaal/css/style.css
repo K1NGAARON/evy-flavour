@@ -38,3 +38,8 @@
 .contact.section .row {
     padding: 60px 30px;
 }
+
+.contact.section .btn:hover {
+    color: var(--primary);
+    background-color: var(--white);
+}

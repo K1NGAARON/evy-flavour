@@ -1,6 +1,3 @@
-let animationStyle = "slideUp";
-let animationTarget = ".row.animate";
-
 // ANIMATE NUMBERS
 function animate(obj, initVal, lastVal, duration) {
     let startTime = null;

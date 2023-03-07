@@ -17,6 +17,9 @@ $("#menu-toggle").click(function() {
     $(".small-menu-wrapper").toggle("active");
 });
 
+let animationStyle = "slideUp";
+let animationTarget = ".animate";
+
 // SLIDE UP ROWS IN VIEWPORT
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

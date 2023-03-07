@@ -1,0 +1,96 @@
+.banner.section {
+    background-image: url('/contact/img/banner.jpg');
+}
+
+.prices.section .wrapper .card {
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.prices.section .card h5,
+.prices.section .card p {
+    padding: 0 30px;
+}
+
+.prices.section .card h5 {
+    padding-top: 10px;
+}
+
+.prices.section .card p:not(.price) {
+    padding: 10px 30px;
+}
+
+.prices.section .wrapper .card h5 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.prices.section .wrapper .card .price {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.reviews.section {
+    height: 40vh;
+}
+
+.reviews.section .col:nth-of-type(1) {
+    flex: 1 0 30%
+}
+
+.reviews.section .col:nth-of-type(2) {
+    flex: 1 0 60%
+}
+
+.reviews.section .wrapper .item {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+    border-radius: var(--border-radius);
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.reviews.section .wrapper .item:nth-of-type(2) {
+    background-color: #a5976c;
+}
+
+.gallery.section .row {
+    padding: 30px 0;
+}
+
+.gallery.section .wrapper {
+    width: 100%;
+    gap: 0;
+}
+
+.gallery.section .wrapper .item {
+    flex: 1 0;
+    display: flex;
+}
+
+.contact.section h2 {
+    color: var(--white);
+}
+
+.contact.section {
+    height: 40vh;
+    background-color: var(--primary);
+}
+
+.contact.section .row {
+    padding: 60px 30px;
+}
+
+.contact.section .btn:hover {
+    color: var(--primary);
+    background-color: var(--white);
+}
