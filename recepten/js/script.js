@@ -3,24 +3,24 @@ const content = [
         title: "this is a title",
         body: "this is some body text",
         img: "/vakantiekok/img/placeholder.jpg",
-        url: '/travel/post/'
+        url: '/recepten/post/'
     },
     {
         title: "this is a title",
         body: "this is some body text",
         img: "/vakantiekok/img/placeholder.jpg",
-        url: '/travel/post/'
+        url: '/recepten/post/'
     },
     {
         title: "this is a title",
         body: "this is some body text",
         img: "/vakantiekok/img/placeholder.jpg",
-        url: '/travel/post/'
+        url: '/recepten/post/'
     }
 ];
 
 function createCards(e) {
-    const target = document.querySelector('#travel-wrapper');
+    const target = document.querySelector('#recept-wrapper');
 
     for (let i = 0; i < content.length; i++) {
         let template = `
