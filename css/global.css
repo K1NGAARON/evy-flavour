@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/bahnschrift');
                 
+@font-face {
+    font-family: 'Charline';
+    src: url('/assets/Charline\ font.otf') format('opentype');
+}
+
 
 :root {
-    --primary: #d36e70;
+    --primary: #ffcbaa;
     --black: #141414;
     --white: #ffffff;
     --light-grey: #fafafa;
     --border-radius: 30px;
     --box-shadow: 0px 3px 6px #00000029;
-    --overlay: linear-gradient(90deg, rgba(211,110,112,1) 10%, rgba(255,255,255,0) 46%, rgba(255,255,255,0) 100%);
+    --overlay: linear-gradient(90deg, rgb(255, 203, 170) 10%, rgba(255,255,255,0) 46%, rgba(255,255,255,0) 100%);
     --transition: all .25s ease-in-out;
 }
 
@@ -35,10 +40,12 @@ h3 {
 
 h1 {
     font-size: 52px;
+    font-family: 'Charline';
 }
 
 h2 {
     font-size: 42px;
+    color: var(--primary);
 }
 
 h3 {

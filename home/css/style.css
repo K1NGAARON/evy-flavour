@@ -1,5 +1,14 @@
 .banner.section {
-    background-image: url('/home/img/banner.jpg');
+    background-image: url('/home/img/evelyne.jpeg');
+}
+
+.banner.section h1 {
+    font-size: 64px;
+}
+
+.banner.section,
+.banner.section .row {
+    min-height: 80vh;
 }
 
 .animated.section {
