@@ -60,7 +60,11 @@
 }
 
 .reviews.section .wrapper .item:nth-of-type(2) {
-    background-color: #a5976c;
+    background-color: var(--secondary);
+}
+
+.reviews.section .wrapper .author {
+    margin-top: auto;
 }
 
 .gallery.section .row {
