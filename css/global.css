@@ -9,6 +9,7 @@
 
 :root {
     --primary: #ffcbaa;
+    --secondary: #818560;
     --black: #141414;
     --white: #ffffff;
     --light-grey: #fafafa;
@@ -80,6 +81,10 @@ ol li {
 img {
     width: 100%;
     height: auto;
+}
+
+img.bg-color {
+    box-shadow: 8px 8px 0px 2px var(--secondary );
 }
 
 .btn-wrapper {

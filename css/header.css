@@ -44,7 +44,7 @@
 }
 
 .header.active nav .nav-item {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .header nav .nav-item::before {
@@ -61,7 +61,12 @@
 }
 
 .header.active nav .nav-item::before {
-    background-color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.header.active .btn {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .header nav .nav-item:hover::before {
@@ -69,7 +74,7 @@
 }
 
 .header.active .topnav-content-sm svg {
-    fill: var(--primary);
+    fill: var(--secondary);
 }
 
 .header .topnav-content-sm {
@@ -113,6 +118,7 @@
 }
 
 .footer .made-by a {
+    color: var(--secondary);
     font-size: 14px;
     font-weight: 600;
 }
