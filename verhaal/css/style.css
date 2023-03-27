@@ -43,3 +43,51 @@
     color: var(--primary);
     background-color: var(--white);
 }
+
+.gallery.section {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gallery.section  .row {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+}
+
+.gallery.section .wrapper {
+    width: 100%;
+    gap: 0;
+}
+
+.gallery.section .wrapper .item {
+    flex: 1 0;
+    display: flex;
+}
+
+@media (max-width: 560px) {
+    .gallery.section .wrapper .item {
+        flex: 1 0 50%;
+    }
+
+    .banner.section img {
+        display: none;
+    }
+
+    .banner.section,
+    .banner.section .row {
+        min-height: fit-content;
+    }
+
+    .banner.section .row {
+        margin-top: 100px;
+    }
+
+    .contact.section .row {
+        padding: 0 30px;
+    }
+
+    .section .row.flex-col.center {
+        align-items: flex-start;
+    }
+}

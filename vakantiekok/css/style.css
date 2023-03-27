@@ -98,3 +98,33 @@
     color: var(--primary);
     background-color: var(--white);
 }
+
+@media (max-width: 560px) {
+    .contact.section .row {
+        padding: 0 30px;
+    }
+
+    .section .row.flex-col.center {
+        align-items: flex-start;
+    }
+
+    .gallery.section .wrapper .item {
+        flex: 1 0 50%;
+    }
+
+    .reviews.section {
+        height: fit-content;
+    }
+
+    .reviews.section .col:nth-of-type(1) {
+        flex: 1 0 100%;
+    }
+
+    .reviews.section .col:nth-of-type(2) {
+        flex: 1 0 100%;
+    }
+
+    .reviews.section .wrapper {
+        flex-direction: column;
+    }
+}

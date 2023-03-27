@@ -132,4 +132,8 @@
     .gallery.section .wrapper .item {
         flex: 1 0 50%;
     }
+
+    .review.section .container .review {
+        font-size: 26px;
+    }
 }
