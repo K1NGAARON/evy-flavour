@@ -27,7 +27,7 @@ const observer = new IntersectionObserver(entries => {
             entry.target.classList.add(animationStyle);
         }
       });
-  });
+});
   
 const targets = document.querySelectorAll(animationTarget);
 for (const target of targets) {
