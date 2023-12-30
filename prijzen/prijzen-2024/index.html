@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Prijzen | Evy's Flavour
+        Prijzen 2024 | Evy's Flavour
     </title>
     <meta name="description" content="">
 
@@ -67,14 +67,25 @@
     </div>
 </header>
 
-<div class="section banner">
-    <div class="row flex-col center">
-        <h1>
-            Ontdek mijn prijslijsten
-        </h1>
-        <div class="btn-wrapper">
-            <a href="/prijzen/prijzen-2024/" target="_blank" class="btn">Prijzen 2024</a>
-            <a href="/prijzen/weekend-concept/" target="_blank" class="btn">Weekend concept</a>
+<div class="section banner contact">
+    <div class="row">
+        <div class="col">
+            <h1>
+                Download de prijzen in PDF
+            </h1>
+        </div>
+        <div class="col">
+            <div class="form-wrapper">
+                <form action="https://formspree.io/f/mwkdzoga" method="POST">
+                    <input type="text" value="" name="first-name" placeholder="Voornaam">
+                    <input type="email" value="" name="email" placeholder="Mailadres">
+                    <div class="container">
+                        <input type="checkbox" id="gdpr" required="">
+                        <label for="gdpr"> Ja, Evy's Flavour mag me interessante informatie sturen.</label><br>
+                    </div>
+                    <input type="submit" value="Download prijzen ➔" name="subscribe" class="btn">
+                </form>
+            </div>
         </div>
     </div>
     <div class="overlay"></div>
@@ -100,6 +111,29 @@
         </div>
     </div>
 </footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner-wrapper">
+    <div class="cookie-banner-content">
+        <h4>
+            Privacy and cookie policy
+        </h4>
+        <p>
+            By using this website you agree to our terms and conditions regarding <a href="/legal/cookie-policy/">cookies</a>.
+        </p>
+        <div class="cookies-buttons">
+            <a id="more-info" href="/legal/cookie-policy/">
+                More info
+            </a>
+            <a id="accept-cookies">
+                I agree
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- COOKIE OVERLAY -->
+<div id="overlay"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> 
     <script src="/home/js/script.js"></script>
